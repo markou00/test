@@ -20,6 +20,11 @@ provider "azurerm" {
 
   }
   skip_provider_registration = "true"
+
+  subscription_id = vars.ARM_CLIENT_ID
+  client_id = vars.ARM_CLIENT_SECRET
+  client_secret = vars.ARM_SUBSCRIPTION_ID
+  tenant_id = vars.ARM_TENANT_ID
 }
 
 # Create a resource group
