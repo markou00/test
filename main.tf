@@ -19,6 +19,7 @@ provider "azurerm" {
   features {
 
   }
+  skip_provider_registration = "true"
 }
 
 # Create a resource group
